@@ -26,7 +26,7 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo-dark-accent">Studio</span></a
           >
-          <ul class="navigation-menu">
+          <ul class="navigation-menu navigation-menu-links">
             <li>
               <a href="./index.html" class="navigation-menu-item-link current"
                 >Studio</a
@@ -52,8 +52,88 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-toggle js-close-menu">
+        <svg class="modal-close-button-cross" width="8" height="8">
+          <use href="./images/icons/icons.svg#cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-navigation-tabs">
+        <li>
+          <a
+            href="./index.html"
+            class="mobile-menu-nav-link mobile-menu-current"
+            >Studio</a
+          >
+        </li>
+        <li>
+          <a href="./portfolio.html" class="mobile-menu-nav-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" class="mobile-menu-nav-link">Contacts</a>
+        </li>
+      </ul>
+
+      <div>
+        <ul class="mobile-menu-addresses-list">
+          <li>
+            <a href="tel:+110001111111" class="mobile-menu-tel-link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mobile-menu-email-link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-social-media-list">
+          <li>
+            <a class="social-media-link" href="#" target="_blank">
+              <svg class="social-media-icon">
+                <use href="./images/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-media-link" href="#" target="_blank">
+              <svg class="social-media-icon">
+                <use href="./images/icons/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-media-link" href="#" target="_blank">
+              <svg class="social-media-icon">
+                <use href="./images/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-media-link" href="#" target="_blank">
+              <svg class="social-media-icon">
+                <use href="./images/icons/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <main>
       <!-- #region Hero-->
       <section class="hero-section">
@@ -69,7 +149,7 @@
       <!-- #endregion -->
 
       <!-- #region Features-->
-      <section class="section" id="features">
+      <section class="section features" id="features">
         <div class="container features-container">
           <h2 class="secondary-heading visually-hidden">Features</h2>
           <ul class="features-list">
@@ -376,7 +456,7 @@
 
       <!-- #region Customers-->
       <section class="section customers-section">
-        <div class="container">
+        <div class="container customers-container">
           <h2 class="secondary-heading customers-heading">Customers</h2>
           <ul class="customers-list">
             <li class="customers-list-item">
@@ -440,7 +520,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-logo-text">
           <a href="./index.html" class="logo footer-logo">
             Web<span class="logo-light-accent">Studio</span></a
           >
@@ -600,5 +680,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
