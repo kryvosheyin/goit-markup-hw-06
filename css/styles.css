@@ -486,7 +486,7 @@ img {
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .order-section {
+  .hero-section {
     background-image: linear-gradient(
         rgba(var(--navy-blue-rgb), 0.7),
         rgba(var(--navy-blue-rgb), 0.7)
@@ -496,7 +496,7 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-  .order-section {
+  .hero-section {
     padding-top: 188px;
     padding-bottom: 188px;
     background-image: linear-gradient(
@@ -509,7 +509,7 @@ img {
 }
 
 @media (min-device-pixel-ratio: 2) and (min-resolution: 2dppx) and (min-width: 1158px) {
-  .order-section {
+  .hero-section {
     background-image: linear-gradient(
         rgba(var(--navy-blue-rgb), 0.7),
         rgba(var(--navy-blue-rgb), 0.7)
